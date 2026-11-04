@@ -60,7 +60,10 @@ java RubiksCube
 - **Machine learning–assisted solving** — ML could reduce both solve time and move count at
   two scales: *global* (a learned model mapping cube states directly to solutions, as recent
   research has done with near-optimal results) and *local* (discovering shorter algorithms
-  for specific recurring cases than the hand-picked beginner sequences used here).
+  for specific recurring cases than the hand-picked beginner sequences used here). Currently,
+  the program solves the Rubik's Cube in just over 100 moves. However, utilizing the powers of
+  machine learning, this number could most likely shrink all the way down to below 20 moves on
+  average.
   *Limitation*: human solvers cannot realistically match ML-optimized solutions, so an
   ML-generated solution may be fast for a computer but impractical as a teaching tool for
   how people actually learn to solve — a real trade-off for a program whose stages mirror
