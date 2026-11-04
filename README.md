@@ -64,7 +64,7 @@ java RubiksCube
   the program solves the Rubik's Cube in just over 100 moves. However, utilizing the powers of
   machine learning, this number could most likely shrink all the way down to below 20 moves on
   average.
-  *Limitation*: human solvers cannot realistically match ML-optimized solutions, so an
+ - *Limitation*: human solvers cannot realistically match ML-optimized solutions, so an
   ML-generated solution may be fast for a computer but impractical as a teaching tool for
   how people actually learn to solve — a real trade-off for a program whose stages mirror
   the human beginner method.
