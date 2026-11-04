@@ -1,6 +1,6 @@
 # Rubiks-Cube-Solver
 A Rubik's Cube simulator and solver written in Java. The cube is modeled with 2D character
-arrays and move logic for all 18 standard moves (U, U2, U', etc.), validated through
+arrays and move logic for all 18 standard moves (U, F2, L', etc.), validated through
 inverse-scramble testing. A piece-finding system locates any edge or corner piece on the
 cube and reports its orientation, driving a beginner-method solver that returns the full
 move-by-move solution.
