@@ -3,14 +3,11 @@ import java.util.Scanner;
 public class RubiksCube
 {
 
-
    public static void main(String[] args)
    {
-     
       RubiksCube myCube = new RubiksCube(); 
       
       myCube.combinedOptionsRun();      
-       
    }
    
    static final RubiksCube SOLVED_CUBE = new RubiksCube(); 
@@ -94,21 +91,18 @@ public class RubiksCube
          for (int j=0; j<3; j++)
             for (int k=0; k<3; k++)
                if (a[i][j][k] != b[i][j][k])
-                  return false; // To make sure it goes through all the chars and all are not the same
-              
+                  return false; // To make sure it goes through all the chars and all are not the same     
    return true;
    } 
 
 
    void printCube()
-   {
-      
+   {  
       //Create the outline of the cube
       /*Tried to simply repeat but faced difficulty as
       the println would print a new line each time when
       I want the middle rows to be next to each other to
-      better show the demensions of a cube*/
-      
+      better show the demensions of a cube*/   
                
       for (int i=0; i<3; i++)
       
