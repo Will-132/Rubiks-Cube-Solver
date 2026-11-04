@@ -10,11 +10,10 @@ public class RubiksCube
       myCube.combinedOptionsRun();      
    }
    
-   static final RubiksCube SOLVED_CUBE = new RubiksCube(); 
    // Outside a class and static so you can access it easily to compare
-   
-   
-   //Make the 2d array to create the side colors of the cube  
+   static final RubiksCube SOLVED_CUBE = new RubiksCube(); 
+
+   // Make the 2d array to create the side colors of the cube  
    char[][] frontFace =
       {
          {'b','b','b'},
@@ -1657,9 +1656,7 @@ public class RubiksCube
      solveOLL();
      solvePLL();
    }     
-
-   
-         
+       
       
    void programSolvesCube() // Computer solves the (already scrambled) cube
    {
@@ -1698,7 +1695,6 @@ public class RubiksCube
             reportCubeState();
             continue;
          }
-   
          apply(input.split(" "));
          System.out.println();
          printCube();
@@ -1740,4 +1736,3 @@ public class RubiksCube
       }  
    }
 }
- 
