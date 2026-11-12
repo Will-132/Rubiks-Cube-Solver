@@ -33,7 +33,7 @@ solver alike.
 The solver works by *case enumeration*: for each piece in each stage, it detects the
 piece's position and orientation, then applies a fixed, tested insertion sequence for
 that case. Combined methods such as `solveWhiteCross()`, `solveOLL()`, `solveF2l()`, or 
-`solvePLL` work to make sure the steps are progress accurately in chronological order.
+`solvePLL` work to make sure the steps progress in chronological order.
 
 ## Project Structure
 
