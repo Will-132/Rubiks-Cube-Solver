@@ -16,7 +16,7 @@ move-by-move solution.
   methods that report where any piece is and which way its stickers face
 - **Beginner-method solver** — solves in stages (white cross → first layer → F2L → OLL →
   PLL), with each stage verified by its own milestone check before proceeding
-- **Solution reporting** — move history with total solution length  the full move sequence, and
+- **Solution reporting** — move history with total solution length, the full move sequence, and
   the time it either took the user or computer to solve the cube
 - **Interactive console interface** — scramble manually or randomly, solve the cube yourself
   with move-by-move input, or have the program solve it
