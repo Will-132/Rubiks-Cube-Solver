@@ -52,8 +52,11 @@ that case. Combined methods such as `solveWhiteCross()`, `solveOLL()`, `solveF2L
 Compile and run:
 
 ```bash
+cd ~/Desktop/Rubiks-Cube-Solver
+git pull
 javac src/*.java
-java -cp src Main  
+java -cp src Main
+  
 ```
 
 
