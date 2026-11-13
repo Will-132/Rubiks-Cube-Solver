@@ -52,8 +52,8 @@ that case. Combined methods such as `solveWhiteCross()`, `solveOLL()`, `solveF2L
 Compile and run:
 
 ```bash
-javac *.java
-java Main  
+javac src/*.java
+java -cp src Main  
 ```
 
 
