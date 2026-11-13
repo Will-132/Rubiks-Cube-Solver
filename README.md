@@ -25,32 +25,35 @@ move-by-move solution.
 
 ## How It Works
 
-The program separates the cube engine from its interfaces. All state lives in the
-`RubiksCube` class: the face arrays, the turn methods, and a silent `apply()` method that
-executes any move sequence — the single engine used by user input, scrambles, and the
-solver alike.
+The program separates the cube engine, piece inspection, solving algorithms, and user
+interface across four classes. All cube state lives in the `RubiksCube` class: the face
+arrays, the turn methods, and a silent `apply()` method that executes any move sequence —
+the single engine used by user input, scrambles, and the solver alike. `CubeInspector` reads
+that state to locate individual pieces, while `CubeSolver` uses those lookups to drive the
+solve.
 
 The solver works by *case enumeration*: for each piece in each stage, it detects the
 piece's position and orientation, then applies a fixed, tested insertion sequence for
-that case. Combined methods such as `solveWhiteCross()`, `solveOLL()`, `solveF2l()`, or 
-`solvePLL` work to make sure the steps progress in chronological order.
+that case. Combined methods such as `solveWhiteCross()`, `solveOLL()`, `solveF2L()`, and 
+`solvePLL()` work to make sure the steps progress in chronological order.
 
 ## Project Structure
 
 | File | Purpose |
 |---|---|
-| `RubiksCube.java` | Cube engine: state, moves, piece tables, solver stages, console interface |
+| `RubiksCube.java` | Cube engine: 2D face state, 18 turn mechanics, scrambling, move validation, and move history |
+| `CubeInspector.java` | Piece-finding engine: edge/corner coordinate tables, piece lookup methods, and state reporting |
+| `CubeSolver.java` | Beginner-method solver: cross, first layer, F2L, 2-step OLL, PLL, and AUF algorithms |
+| `Main.java` | Console interface: program entry point, interactive user solve mode, and timed computer solve mode |
 | `README.md` | This file |
 
-
-```markdown
 ## Getting Started
 
 Compile and run:
 
-```bash  
-javac RubiksCube.java  
-java RubiksCube  
+```bash
+javac *.java
+java Main  
 ```
 
 
