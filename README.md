@@ -25,7 +25,7 @@ move-by-move solution.
 
 ## How It Works
 
-The program separates the cube engine, piece inspection, solving algorithms, and user
+The program assumes the cube is positioned so the blue face is up front and the yellow face is on top. Additionally, the program separates the cube engine, piece inspection, solving algorithms, and user
 interface across four classes. All cube state lives in the `RubiksCube` class: the face
 arrays, the turn methods, and a silent `apply()` method that executes any move sequence —
 the single engine used by user input, scrambles, and the solver alike. `CubeInspector` reads
