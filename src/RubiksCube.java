@@ -399,6 +399,7 @@ public class RubiksCube
     //Create a way for the viewer to scramble the cube on their own
     String[] getScramble()
     {
+        System.out.println("Position the cube with the blue face in front and yellow face on top");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Give the scramble you want to make for the Rubiks Cube");
         System.out.println("Separate each move with a space");
