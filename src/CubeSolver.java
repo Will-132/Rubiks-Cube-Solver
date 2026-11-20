@@ -595,9 +595,8 @@ public class CubeSolver
     void solveOLLCorners() // Part of 2-step OLL in beginners method
     {
         // Much easier to program as normal OLL has 57 algorithms (215 possible permutations)
-        if (cube.topFace == RubiksCube.SOLVED_CUBE.topFace) // Compares to the solved cube (Easier than sorting through each sticker)
-            return;
-        else if (cube.frontFace[0][0] == 'y' && cube.frontFace[0][2] == 'y' && cube.backFace[0][0] == 'y' && cube.backFace[0][2] == 'y')
+        
+        if (cube.frontFace[0][0] == 'y' && cube.frontFace[0][2] == 'y' && cube.backFace[0][0] == 'y' && cube.backFace[0][2] == 'y')
             cube.apply("R U2 R' U' R U R' U' R U' R'");
         else if (cube.leftFace[0][0] == 'y' && cube.leftFace[0][2] == 'y' && cube.rightFace[0][0] == 'y' && cube.rightFace[0][2] == 'y')
             cube.apply("U R U2 R' U' R U R' U' R U' R'");
@@ -650,7 +649,7 @@ public class CubeSolver
         else if (cube.topFace[0][0] == 'y' && cube.frontFace[0][0] == 'y' && cube.rightFace[0][0] == 'y' && cube.backFace[0][0] == 'y')
             cube.apply("U R U2 R' U' R U' R'");
         else
-            return; // Should not occur
+            return; // If OLL cornerd are already solved
     }
 
     void solveOLL()
