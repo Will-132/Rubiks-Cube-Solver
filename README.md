@@ -5,7 +5,7 @@ inverse-scramble testing. A piece-finding system locates any edge or corner piec
 cube and reports its orientation, driving a beginner-method solver that returns the full
 move-by-move solution.
 
-![Example of program solving the Rubik's Cube](screenshots/Code_Example.png)
+![Example of program solving the Rubik's Cube](screenshots/RubiksCube.png)
 
 ## Features
 
